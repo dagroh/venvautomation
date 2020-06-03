@@ -32,3 +32,18 @@
     virtualenv: "{{ venv }}"
     requirements: "{{ role_path }}/files/requirements.txt"
     extra_args: "--no-index --find-links=file://{{ temp_dir }}"
+
+- name: clean up temporary directory
+  file:
+    path: "{{ temp_dir }}"
+    state: absent
+
+- name: patch tower configuration
+  uri:
+    url: "{{ tower_url }}"
+    user: "{{ tower_user }}"
+    password: "{{ tower_password }}"
+    body: '{"CUSTOM_VENV_PATHS": ["{{ venv_dir }}"]}'
+    headers:
+      Content-Type: 'application/json'
+    method: PATCH

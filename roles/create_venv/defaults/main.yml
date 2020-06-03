@@ -19,4 +19,12 @@ py_packages:
   - PyYAML-5.3.1.tar.gz
   - six-1.15.0.tar.gz
 temp_dir: "/root/PythonPackages"
-venv: "/opt/my-envs/ansible27venv"
+venv_dir: "/opt/my-envs/"
+venv: "{{ venv_dir }}ansible27venv"
+
+
+###TESTING, CHANGE IN LIVE###
+tower_url: https://192.168.122.10/api/v2/settings/system/
+tower_user: admin
+tower_password: admin
+#############################
