@@ -3,6 +3,7 @@
 cdn_packages:
   - python3-devel
   - libffi-devel
+  - openssl-devel
   - gcc
 py_packages:
   - ansible-2.7.18.tar.gz
