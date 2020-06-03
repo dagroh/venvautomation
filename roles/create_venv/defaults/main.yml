@@ -1,2 +1,21 @@
 ---
 # defaults file for create_venv
+cdn_packages:
+  - python3-devel
+  - libffi-devel
+  - gcc
+py_packages:
+  - ansible-2.7.18.tar.gz
+  - bcrypt-3.1.7.tar.gz
+  - cffi-1.14.0.tar.gz
+  - cryptography-2.9.2.tar.gz
+  - Jinja2-2.11.2.tar.gz
+  - MarkupSafe-1.1.1.tar.gz
+  - paramiko-2.7.1.tar.gz
+  - psutil-5.7.0.tar.gz
+  - pycparser-2.20.tar.gz
+  - PyNaCl-1.4.0.tar.gz
+  - PyYAML-5.3.1.tar.gz
+  - six-1.15.0.tar.gz
+temp_dir: "/root/PythonPackages"
+venv: "/opt/my-envs/ansible27venv"

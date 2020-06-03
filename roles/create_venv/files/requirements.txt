@@ -1,0 +1,14 @@
+# requirements file for python venv
+
+ansible==2.7.18
+bcrypt
+cffi
+cryptography
+Jinja2
+MarkupSafe
+paramiko
+psutil
+pycparser
+PyNaCl
+PyYAML
+six
