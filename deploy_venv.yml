@@ -1,0 +1,8 @@
+#this playbook runs the create_venv role to create python venv on the target host
+---
+- name: deploy virtual environment
+  hosts: localhost
+  remote_user: root
+
+  roles:
+    - create_venv
