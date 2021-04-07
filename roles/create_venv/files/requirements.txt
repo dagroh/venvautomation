@@ -1,6 +1,6 @@
 # requirements file for python venv
 
-ansible==2.7.18
+ansible==2.10.0
 bcrypt
 cffi
 cryptography
